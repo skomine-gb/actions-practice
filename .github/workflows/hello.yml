@@ -1,0 +1,14 @@
+name: Hello
+
+on: [push]
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello, Github Actions!"
+      - name: Show date and runner info
+        run: |
+          date
+          node --version || echo "node is not installed yet"
