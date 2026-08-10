@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { add, divide } from "./calculator";
+import { add, multiply, divide } from "./calculator";
 
 describe("add", () => {
   it("adds two numbers", () => {
@@ -8,6 +8,12 @@ describe("add", () => {
 
   it("handles negative numbers", () => {
     expect(add(-1, 1)).toBe(0);
+  });
+});
+
+describe("multiply", () => {
+  it("multiplies two numbers", () => {
+    expect(multiply(3, 4)).toBe(12);
   });
 });
 
